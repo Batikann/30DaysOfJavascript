@@ -1,3 +1,4 @@
+
 const arr=[3,5,7];
 const arr2=['Emir Batıkan',21,'Uçar'];
 console.log(arr2);
@@ -46,5 +47,7 @@ const webTechs = [
     'Node',
     'MongoDB'
   ]
+
+  export{webTechs,nums,arr4}
 
   console.log(webTechs.sort().reverse());
