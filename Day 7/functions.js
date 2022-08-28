@@ -313,12 +313,299 @@ evensAndOdds(100);
 /*
 function sum(...numbers) {
   let sum=0;
-  for (let i = 0; i <= numbers; i++) {
-    if (true) {
-      sum += i;
-    }
+  for (let i = 0; i < numbers.length; i++) {
+   sum +=numbers[i];
   }
-  console.log();
+  console.log(sum);
 }
-sum(1,2,3);
+
+sum(1,1,1)
 */
+
+//Step-15
+/*
+const randomUserIP = () => {
+  let randomIpAdress = [];
+  for (let i = 0; i < 4; i++) {
+    let value = Math.floor(Math.random() * 255);
+    randomIpAdress.push(value);
+  }
+  console.log(randomIpAdress.join('.'));
+};
+
+randomUserIP();
+*/
+
+//Step-17
+/*
+function randomHexaNumberGenerator() {
+  let randomValue = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+  ];
+  let randomHexArr = [];
+  for (let i = 0; i < 6; i++) {
+    let value=Math.floor(Math.random()*34);
+     
+     randomHexArr.push(randomValue[value]);
+  }
+  console.log(`'#${randomHexArr.join('')}'`);
+}
+
+randomHexaNumberGenerator();
+*/
+
+//Step-18
+/*
+let randomValue = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z",
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+];
+const randomLower=()=>{
+  let value=Math.floor(Math.random()*25)
+  return randomValue[value].toLowerCase();
+}
+
+const randomUpper=()=>{
+  let value=Math.floor(Math.random()*25)
+  return randomValue[value].toUpperCase();
+}
+
+const randomNumber=()=>{
+  let value=Math.floor((Math.random()*9)+26)
+  return randomValue[value];
+}
+
+const userIdGenerator=()=>{
+  let randomId=[];
+   for (let i = 0; i < 7; i++) {
+    let arr=[randomLower(),randomUpper(),randomNumber()];
+    let value=Math.floor((Math.random()*3))
+    randomId.push(arr[value]);
+   }
+   console.log(randomId.join(''));
+}
+
+userIdGenerator();
+
+//console.log(Math.floor((Math.random()*3)));
+*/
+
+//LEVEL-3
+
+//Step-1
+/*
+let randomValue = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z",
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+];
+const randomLower = () => {
+  let value = Math.floor(Math.random() * 25);
+  return randomValue[value].toLowerCase();
+};
+
+const randomUpper = () => {
+  let value = Math.floor(Math.random() * 25);
+  return randomValue[value].toUpperCase();
+};
+
+const randomNumber = () => {
+  let value = Math.floor(Math.random() * 9 + 26);
+  return randomValue[value];
+};
+
+const userIdGenerator = () => {
+  let characterNumber = prompt("Karakter Sayısını Giriniz");
+  let repeatNumber = prompt("Tekrar Sayısını Giriniz");
+
+  let randomId = [];
+  for (let x = 0; x < parseInt(repeatNumber); x++) {
+    for (let i = 0; i < parseInt(characterNumber); i++) {
+      let arr = [randomLower(), randomUpper(), randomNumber()];
+      let value = Math.floor(Math.random() * 3);
+      randomId.push(arr[value]);
+    }
+    console.log(randomId.join(""));
+    randomId=[];
+  }
+};
+
+userIdGenerator();
+*/
+
+
+//Step-2
+/*
+const rgbColorGenerator=()=>{
+  let randomRgb=[];
+  for (let i = 0; i < 3; i++) {
+    let value=Math.floor(Math.random()*255)
+    randomRgb.push(value);
+  }
+  console.log(`RGB Code: rgb(${randomRgb.join(',')})`);
+}
+
+rgbColorGenerator();
+*/
+
+//Step-8 -------------->Tekrar Bak Düzgün Çalışmıyor!!
+/*
+const shuffleArray=(Array)=>{
+  let shuffleArr=[];
+  let lastValue;
+  for (let i = 0; i < Array.length; i++) {
+    let value=Math.floor(Math.random()*Array.length);
+    if (value==lastValue) {
+      let value=Math.floor(Math.random()*Array.length);
+    }
+    else{
+      shuffleArr.push(Array[value]);
+    }
+    lastValue=value;
+  }
+  console.log(shuffleArr);
+}
+
+shuffleArray([1,2,3,4,5]);
+*/
+
+//Step-9
+/*
+const factorial=(number)=>{
+  let value=1;
+  for (let i = number; i >= 1; i--) {
+    value *=i;
+  }
+  console.log(value);
+}
+
+factorial(4);
+factorial(5);
+*/
+
+//Step-10
+/*
+const isEmpty=(Array)=>{
+  if (Array.length<1) {
+    console.log("Array is Empty!");
+  }
+  else{
+    console.log("Array Not Empty!");
+  }
+}
+
+isEmpty([1,1,1])
+*/
+
+//Step-11
+/*
+const sum=(...numbers)=>{
+  let sum=0;
+   for (let i = 0; i < numbers.length; i++) {
+      sum +=numbers[i];
+   }
+   console.log(sum);
+}
+
+sum(1,2,3,5,7)
+*/
+
