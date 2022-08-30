@@ -336,6 +336,72 @@ const randomUserIP = () => {
 randomUserIP();
 */
 
+//Step-16
+/*
+let words = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z",
+];
+
+const randomNumberWithWord = () => {
+  let randomWord = Math.floor(Math.random() * 26);
+  let randomNum = Math.floor(Math.random() * 9);
+  let word = words[randomWord].toUpperCase();
+  return word.concat(randomNum);
+};
+
+const randomNumber = () => {
+  let value = Math.floor(Math.random() * 99);
+  return value;
+};
+
+const randomWord = () => {
+  let wordss = [];
+  for (let i = 0; i < 2; i++) {
+    let randomWord = Math.floor(Math.random() * 26);
+    wordss.push(words[randomWord].toUpperCase());
+  }
+  return wordss.join('');
+};
+
+const randomMacAddress = () => {
+  let randomMacAddress = [];
+  for (let i = 0; i < 6; i++) {
+    let functions = [randomNumberWithWord(), randomNumber(), randomWord()];
+    let number = Math.floor(Math.random() * 3);
+    randomMacAddress.push(functions[number]);
+  }
+  console.log(randomMacAddress.join('-'));
+};
+
+randomMacAddress();
+
+*/
+
 //Step-17
 /*
 function randomHexaNumberGenerator() {
@@ -532,7 +598,6 @@ const userIdGenerator = () => {
 userIdGenerator();
 */
 
-
 //Step-2
 /*
 const rgbColorGenerator=()=>{
@@ -609,3 +674,341 @@ const sum=(...numbers)=>{
 sum(1,2,3,5,7)
 */
 
+//Step-12
+
+/*
+const sumOfArrayItems=(Array)=>{
+  let sum=0;
+  for (let i = 0; i < Array.length; i++) {
+    sum +=Array[i];
+  }
+  console.log(`Sum: ${sum}`);
+}
+
+sumOfArrayItems([1,2,3,4,5]);
+*/
+
+//Step-13
+/*
+const average=(Array)=>{
+  let sum=0;
+  let average=Array.length;
+   for (let i = 0; i < Array.length; i++) {
+       sum +=Array[i];
+   }
+   console.log(sum);
+   console.log(average);
+   console.log(`Average: ${sum/average}`);
+}
+average([10,4,5,7,3]);
+*/
+
+//Step-14
+/*
+const modifyArray = (Array) => {
+  let modifyArr = [];
+  for (let i = 0; i < Array.length; i++) {
+    if (i == 4) {
+      let fifthItem = Array.slice(4, 5).toString().toUpperCase();
+      modifyArr.push(Array[i].toUpperCase());
+      continue;
+    }
+    modifyArr.push(Array[i]);
+  }
+  if (Array.length>=5) {
+    console.log(modifyArr);
+  }
+  else{
+    console.log("Array Uzunluğu Yetersiz..");
+  }
+};
+
+//let testArr=[1,2,3,4,"Test",6];
+//console.log(testArr.slice(4,5).toString().toUpperCase().split(' '));
+console.log(modifyArray(["Avocado", "Tomato", "Potato","Potato"]));
+*/
+
+//Step-15
+/*
+const isPrime=(...numbers)=>{
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i]==2 || numbers[i]%2==1) {
+      console.log(`${numbers[i]} is Prime`);
+    }
+    else{
+      console.log(`${numbers[i]} not Prime`);
+    }
+    
+  }
+}
+
+isPrime(4);
+*/
+
+//Step-16
+/*
+const uniqueArr = (value, index, self) => {
+  return self.indexOf(value) == index;
+};
+
+const arr=[1,2,3,4,1,4,4,5];
+console.log(arr.filter(uniqueArr));
+*/
+//Step-17
+/*
+const typeControl = (Array) => {
+  let lastArrValue;
+  let status;
+  for (let i = 0; i < Array.length; i++) {
+    if (lastArrValue != (typeof Array[i])) {
+      lastArrValue = typeof Array[i]; 
+      status=true;
+      break;
+    } else {
+       status=false;
+    }
+  }
+  status==true? console.log("Farklı Tip Var") : console.log("Aynı Tipte");
+};
+
+typeControl([1,2,3,4,5,6])
+*/
+
+//Step-18
+/*
+const isValidVariable = (value) => {
+  var regex = "^([a-zA-Z_$][a-zA-Zd_$]*)$";
+  if (value.match(regex)) {
+    console.log(`${value} Valid Variable Name..`);
+  }
+  else{
+    console.log(`${value} Invalid Variable Name..`);
+  }
+};
+
+isValidVariable("number 11")
+*/
+
+//Step-19
+/*
+const sevenRandomNumbers=()=>{
+  let randomNumbers=[];
+  for (let i = 0; i < 7; i++) {
+    let randomVal=Math.floor(Math.random()*9);
+    randomNumbers.push(randomVal);
+  }
+  console.log(randomNumbers);
+}
+
+sevenRandomNumbers();
+*/
+
+//Step-20
+/*
+const countries = [
+  "Afghanistan",
+  "Albania",
+  "Algeria",
+  "Andorra",
+  "Angola",
+  "Antigua and Barbuda",
+  "Argentina",
+  "Armenia",
+  "Australia",
+  "Austria",
+  "Azerbaijan",
+  "Bahamas",
+  "Bahrain",
+  "Bangladesh",
+  "Barbados",
+  "Belarus",
+  "Belgium",
+  "Belize",
+  "Benin",
+  "Bhutan",
+  "Bolivia",
+  "Bosnia and Herzegovina",
+  "Botswana",
+  "Brazil",
+  "Brunei",
+  "Bulgaria",
+  "Burkina Faso",
+  "Burundi",
+  "Cambodia",
+  "Cameroon",
+  "Canada",
+  "Cape Verde",
+  "Central African Republic",
+  "Chad",
+  "Chile",
+  "China",
+  "Colombi",
+  "Comoros",
+  "Congo (Brazzaville)",
+  "Congo",
+  "Costa Rica",
+  "Cote d'Ivoire",
+  "Croatia",
+  "Cuba",
+  "Cyprus",
+  "Czech Republic",
+  "Denmark",
+  "Djibouti",
+  "Dominica",
+  "Dominican Republic",
+  "East Timor (Timor Timur)",
+  "Ecuador",
+  "Egypt",
+  "El Salvador",
+  "Equatorial Guinea",
+  "Eritrea",
+  "Estonia",
+  "Ethiopia",
+  "Fiji",
+  "Finland",
+  "France",
+  "Gabon",
+  "Gambia, The",
+  "Georgia",
+  "Germany",
+  "Ghana",
+  "Greece",
+  "Grenada",
+  "Guatemala",
+  "Guinea",
+  "Guinea-Bissau",
+  "Guyana",
+  "Haiti",
+  "Honduras",
+  "Hungary",
+  "Iceland",
+  "India",
+  "Indonesia",
+  "Iran",
+  "Iraq",
+  "Ireland",
+  "Israel",
+  "Italy",
+  "Jamaica",
+  "Japan",
+  "Jordan",
+  "Kazakhstan",
+  "Kenya",
+  "Kiribati",
+  "Korea, North",
+  "Korea, South",
+  "Kuwait",
+  "Kyrgyzstan",
+  "Laos",
+  "Latvia",
+  "Lebanon",
+  "Lesotho",
+  "Liberia",
+  "Libya",
+  "Liechtenstein",
+  "Lithuania",
+  "Luxembourg",
+  "Macedonia",
+  "Madagascar",
+  "Malawi",
+  "Malaysia",
+  "Maldives",
+  "Mali",
+  "Malta",
+  "Marshall Islands",
+  "Mauritania",
+  "Mauritius",
+  "Mexico",
+  "Micronesia",
+  "Moldova",
+  "Monaco",
+  "Mongolia",
+  "Morocco",
+  "Mozambique",
+  "Myanmar",
+  "Namibia",
+  "Nauru",
+  "Nepal",
+  "Netherlands",
+  "New Zealand",
+  "Nicaragua",
+  "Niger",
+  "Nigeria",
+  "Norway",
+  "Oman",
+  "Pakistan",
+  "Palau",
+  "Panama",
+  "Papua New Guinea",
+  "Paraguay",
+  "Peru",
+  "Philippines",
+  "Poland",
+  "Portugal",
+  "Qatar",
+  "Romania",
+  "Russia",
+  "Rwanda",
+  "Saint Kitts and Nevis",
+  "Saint Lucia",
+  "Saint Vincent",
+  "Samoa",
+  "San Marino",
+  "Sao Tome and Principe",
+  "Saudi Arabia",
+  "Senegal",
+  "Serbia and Montenegro",
+  "Seychelles",
+  "Sierra Leone",
+  "Singapore",
+  "Slovakia",
+  "Slovenia",
+  "Solomon Islands",
+  "Somalia",
+  "South Africa",
+  "Spain",
+  "Sri Lanka",
+  "Sudan",
+  "Suriname",
+  "Swaziland",
+  "Sweden",
+  "Switzerland",
+  "Syria",
+  "Taiwan",
+  "Tajikistan",
+  "Tanzania",
+  "Thailand",
+  "Togo",
+  "Tonga",
+  "Trinidad and Tobago",
+  "Tunisia",
+  "Turkey",
+  "Turkmenistan",
+  "Tuvalu",
+  "Uganda",
+  "Ukraine",
+  "United Arab Emirates",
+  "United Kingdom",
+  "United States",
+  "Uruguay",
+  "Uzbekistan",
+  "Vanuatu",
+  "Vatican City",
+  "Venezuela",
+  "Vietnam",
+  "Yemen",
+  "Zambia",
+  "Zimbabwe",
+];
+
+const reverseCountries = (Array) => {
+  let copyArr = [];
+   for (let i = 0; i < Array.length; i++) {
+    copyArr.push((Array[i]));
+   }
+   console.log(copyArr);
+   console.log(Array.reverse());
+};
+
+reverseCountries(countries)
+*/
