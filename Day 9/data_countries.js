@@ -2136,7 +2136,7 @@ function statistics() {
 
   this.mean = function () {
     //Ortalama
-    let value = Math.floor(statistics.sum() / statistics.count());
+    let value = Math.round(statistics.sum() / statistics.count());
     return value;
   };
 
@@ -2149,6 +2149,24 @@ function statistics() {
     return val;
   };
 
+  this.mode=function() {
+    const modes={};
+    let mode=0,count=0;
+    for (let i = 0; i < ages.length; i++) {
+      const item=ages[i];
+      if (modes[item]) {
+        modes[item]++
+      }else{
+        modes[item]=1;
+      }
+      if (count < modes[item]) {
+        mode=item;
+        count=modes[item];
+      }
+    }
+    return {mode,count};
+  }
+
   this.var = function () {
     let step1 = Math.round(statistics.sum() / statistics.count());
     let sum = 0;
@@ -2160,11 +2178,24 @@ function statistics() {
   };
   this.std=function() {
     let val=statistics.var();
-    return Math.sqrt(val);
+    return Math.sqrt(val).toFixed(1);
+  }
+
+  this.describe=function() {
+    console.log(`Count: ${statistics.count()}`);
+    console.log(`Sum: ${statistics.sum()}`);
+    console.log(`Min: ${statistics.min()}`);
+    console.log(`Max: ${statistics.max()}`);
+    console.log(`Range: ${statistics.range()}`);
+    console.log(`Mean: ${statistics.mean()}`);
+    console.log(`Median: ${statistics.median()}`);
+    console.log(`Mode: (${statistics.mode().mode}, ${statistics.mode().count})`);
+    console.log(`Variance: ${statistics.var()}`);
+    console.log(`Standard Deviation: ${statistics.std()}`);
   }
 }
 
 
 
 var statistics = new statistics();
-console.log(statistics.std());
+statistics.describe();
