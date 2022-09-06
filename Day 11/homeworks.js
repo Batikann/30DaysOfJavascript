@@ -2103,6 +2103,7 @@ for(const{name,capital,population,languages} of dataCountries){
 */
 
 //Step-3
+/*
 const students = [
     ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
     ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
@@ -2117,3 +2118,36 @@ const students = [
  }
 
  console.log(convertArrayToObject(students));
+ */
+
+ //Step-4
+ const student = {
+    name: 'David',
+    age: 25,
+    skills: {
+      frontEnd: [
+        { skill: 'HTML', level: 10 },
+        { skill: 'CSS', level: 8 },
+        { skill: 'JS', level: 8 },
+        { skill: 'React', level: 9 }
+      ],
+      backEnd: [
+        { skill: 'Node',level: 7 },
+        { skill: 'GraphQL', level: 8 },
+      ],
+      dataBase:[
+        { skill: 'MongoDB', level: 7.5 },
+      ],
+      dataScience:['Python', 'R', 'D3.js']
+    }
+  }
+
+
+   const modifyStudent={...student}
+   modifyStudent.skills.frontEnd.push({skill:'Boostrap',level:8});
+   modifyStudent.skills.backEnd.push({skill:'Express',level:9});
+   modifyStudent.skills.dataBase.push({skill:'SQL',level:8});
+   modifyStudent.skills.dataScience.push('SQL');
+   console.log(modifyStudent);
+     
+   
