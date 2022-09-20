@@ -148,14 +148,20 @@ countriesAPIEx();
 const countriesAPIEx = async () => {
   const newArr = [];
   const response = await (await fetch(countriesAPI)).json();
-  const result = [...response].map((res) => {
-      return Object.values(res.languages)
-
+  const res = [...response].map(function(i) {
+    return i.languages;
   });
-
   
- console.log(result);
+  for (let i = 0; i < res.length; i++) {
+    for (let x = 0; x < res[i].length; x++) {
+       newArr.push(res[i][x].name);
+    }
+  }
+
+  const result=new Set(newArr)
+  console.log([...result].length);
+    
+  
 };
 
 countriesAPIEx();
-//[res.languages.length]
