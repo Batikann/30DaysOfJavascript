@@ -1,0 +1,62 @@
+.collapse{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+button{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+#inputBox{
+    padding: 0.7rem;
+    width: 40rem;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+#alert{
+    color: red;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.numbers-collapse{
+    margin: 3rem 5rem 0 5rem;
+}
+
+
+
+.even-numbers{
+     display: inline-block;
+     margin: 0.3rem;
+     background-color: green;
+     color: white;
+     font-weight: bold;
+     padding: 1.5rem 3rem;
+}
+
+.odd-numbers{
+    display: inline-block;
+    margin: 0.3rem;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 1.5rem 3rem;
+}
+
+.prime-numbers{
+    display: inline-block;
+    margin: 0.3rem;
+    background-color: yellow;
+    color: white;
+    font-weight: bold;
+    padding: 1.5rem 3rem;
+}
