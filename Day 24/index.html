@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <h1>Calculate a weight of an object on a planet</h1>
+      <input type="text" id="textBox" placeholder="Mass in Kilogram" />
+      <select name="drop1" id="select1">
+        <option value="">---select planet---</option>
+        <option value="mercury">MERCURY</option>
+        <option value="venus">VENUS</option>
+        <option value="earth">EARTH</option>
+        <option value="moon">MOON</option>
+        <option value="mars">MARS</option>
+        <option value="jupiter">JUPITER</option>
+        <option value="saturn">SATURN</option>
+        <option value="uranus">URANUS</option>
+        <option value="neptune">NEPTUNE</option>
+        <option value="pluto">PLUTO</option>
+      </select>
+      <button type="submit" id="btn">Calculate weight</button>
+      <div class="collapse-div">
+        <img id="img" src="images/earth.png" alt="" />
+        <div style="text-align: center;display: flex;">
+          <p id="text">
+            The weight of the object on <span id="selectValue"></span>
+          </p>
+          <div id="calculateMass"><span id="calculateMassInner"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="day-24.js"></script>
+  </body>
+</html>

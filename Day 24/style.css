@@ -1,0 +1,83 @@
+body{
+    background-image: url('images/galaxy.gif');
+    text-align: center;
+}
+
+.main-div{
+    margin: 0 35rem 0 25rem;
+}
+
+h1{
+  color: aliceblue;
+  margin-top: 5rem;
+  font-size: 3rem;
+}
+
+#select1{
+    padding: 0.7rem;
+}
+
+#textBox{
+    padding: 0.7rem;
+    width: 15rem;
+}
+
+#btn{
+    padding: 0.7rem;
+    background-color: grey;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+.collapse-div{
+  background-color: #dff9fb;
+  padding: 5rem;
+  margin-top: 2rem;
+  width: 80rem;
+  display: flex;
+  justify-content: center;
+}
+
+.collapse-div-2{
+    background-color: aqua;
+    width: 80rem;
+    display: flex;
+    margin: -44rem 0 0 17rem ;
+    justify-content: center;
+    color: black ;
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+
+#img{
+    padding: 2.5rem;
+}
+
+#text{
+    color: black;
+    font-weight: bold;
+    padding: 3rem;
+    font-size: 2rem;
+}
+
+#calculateMass{
+    margin:10rem 0 0 -20rem ;
+    background-color: aquamarine;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+}
+
+#calculateMassInner{
+    display: flex;
+    margin: 4rem 0 0 2.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
