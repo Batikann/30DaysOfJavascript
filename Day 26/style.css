@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.img{
+    background-image: url("img/globe-2.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+}
+
+.img-text{
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+}
+
+button{
+    padding: 0.5rem;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    background-color: #8e44ad;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+.btns{
+    margin-top: 1.5rem;
+}
+
+p{
+    margin-top: 1rem;
+}
+
+#textBarDiv{
+  margin-top: 1rem;
+}
+
+#textBar{
+    padding: 1rem 10rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+}
+i{
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}
+
+ul{
+    margin: 1rem;
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+}
+
+.li-img{
+    width: 200px;
+    height: 200px;
+    background: url('img/map_image.jpg'),#8e44ad;
+    margin: 1rem;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.span-text{
+    margin-top: 5rem;
+    display: block;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+#main{
+    margin: 0 7rem 0 7rem;
+}
