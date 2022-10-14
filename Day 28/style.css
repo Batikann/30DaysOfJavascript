@@ -1,0 +1,111 @@
+.collapse{
+    text-align: center;
+    margin: 0 15rem 0 15rem;
+}
+.top-div{
+    margin-top: 2rem;
+}
+
+input{
+padding: 0.7rem 0.7rem;
+margin-right: 0.2rem;
+border: 1px solid #fab1a0;
+}
+
+input:focus{
+    outline: 2px solid #e17055;
+}
+
+.section{
+    margin-bottom: 1rem;
+}
+#addP{
+    padding: 0.7rem 1rem;
+    background-color: #fab1a0;
+    color: white;
+    border: none;
+}
+
+#addP:hover{
+    background-color: #e17055;
+}
+
+.alert{
+    font-size: 1.5rem;
+    color: red;
+}
+
+li{
+    background-color: #e17055;
+}
+
+
+.section{
+    background-color: #e17055;
+    padding: 0.2rem;
+}
+
+.main{
+    margin-top: 1rem;
+}
+
+
+.name{
+    font-size: 2rem;
+    color: black;
+    text-align: start;
+}
+
+.date{
+    color: #535c68;
+    font-size: 1.2rem;
+    text-align: start;
+}
+
+.country{
+    position: absolute;
+    margin: -5.5rem 0 0 -20rem;
+    font-size: 1.8rem;
+}
+
+.score{
+    position: absolute;
+    margin: -5rem 0 0 -1rem;
+    font-size: 1.3rem;
+}
+
+p{
+    margin-left: 2rem;
+}
+
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+    background-color: white;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+}
+
+
+
+.btn-div{
+    position: absolute;
+    margin: -7.5rem 0 0 70rem;
+}
+
+.five{
+    border: none;
+    background-color: white;
+    padding: 1.8rem;
+    border-radius: 50%;
+}
+
+.five:hover{
+    background-color: #78e08f;
+}
+
+i{
+    color: red;
+}

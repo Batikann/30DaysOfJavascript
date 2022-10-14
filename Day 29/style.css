@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 3rem;
+}
+
+label{
+    display: block;
+    margin: 1rem 38rem 1rem 0 ;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+input{
+    padding: 1rem 15rem;
+    font-size: 1.2rem;
+}
+
+.alert{
+    font-size: 1.2rem;
+    margin:2rem 0 3rem 0;
+    font-weight: bold;
+    color: #e58e26;
+}
+
+button{
+    padding: 1rem 3rem;
+    border: none;
+    color: white;
+    background-color: #535c68;
+    margin: 2rem 37rem 3rem 0;
+    border-radius: 5px;
+}
+
+.success{
+    outline: 2px solid #6ab04c;
+}
+
+.error{
+    outline: 2px solid #eb4d4b;
+}

@@ -194,15 +194,13 @@ const countries = [
   "Zimbabwe",
 ];
 
-let i = 3;
-let x = 2;
 
 const ulElementDOM = document.getElementById("ulElement");
 const textBarDOM = document.getElementById("textBar");
 const textP = document.getElementById("test");
 const strWord = document.getElementById("strWord");
 const anyWord = document.getElementById("anyWord");
-//const aToZ=document.getElementById('atoZ');
+const aToZ=document.getElementById('atoZ');
 
 
 strWord.addEventListener("click", () => {
@@ -227,6 +225,7 @@ strWord.addEventListener("click", () => {
   //console.log(strWord.id);
 });
 
+
 anyWord.addEventListener("click", () => {
   textBarDOM.addEventListener("keyup", () => {
     let filterValue = textBarDOM.value.toUpperCase();
@@ -238,7 +237,7 @@ anyWord.addEventListener("click", () => {
       if (span.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
         let val = span.innerHTML.toUpperCase().indexOf(filterValue);
         li[i].style.display = "";
-        textP.textContent = `Countries containing ${filterValue} are }`;
+        textP.textContent = `Countries containing ${filterValue}`;
       } else {
         li[i].style.display = "none";
       }
@@ -263,3 +262,4 @@ for (let i = 0; i < countries.length; i++) {
   liElement.appendChild(divElement);
   ulElementDOM.appendChild(liElement);
 }
+
